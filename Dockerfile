@@ -92,6 +92,5 @@ RUN apk add --no-cache su-exec \
  && chown -R wealthfolio:wealthfolio /data \
  && chmod +x /usr/local/bin/wealthfolio-entrypoint
 
-VOLUME ["/data"]
 EXPOSE 8080
 ENTRYPOINT ["/usr/local/bin/wealthfolio-entrypoint"]
